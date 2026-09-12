@@ -3,8 +3,6 @@ import { Card } from "../components/ui/Card";
 import Button from "../components/ui/Button";
 import { useToast } from "../components/ui/Toast";
 import { MOCK_WALLET } from "../mock/data";
-import logoHorizontal from "@/imports/logo_simbolo_horizontal.png";
-
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function truncateAddress(addr: string) {
@@ -131,7 +129,7 @@ export default function ProfilePage({
             </div>
           </div>
           <img
-            src={logoHorizontal}
+            src="/images/logo_simbolo_horizontal.png"
             alt="Honra"
             className="h-6 w-auto object-contain opacity-40 hidden sm:block"
             style={{ maxWidth: "80px" }}
