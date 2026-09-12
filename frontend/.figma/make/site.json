@@ -1,0 +1,10 @@
+{
+  "description": "Enables secure Web3 purchases with USDC escrow on HSK Chain, ensuring funds release only after buyer confirmation for safe transactions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
