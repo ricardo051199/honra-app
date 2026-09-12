@@ -48,7 +48,7 @@ export default function Header({
       {showMenuButton && (
         <div className="md:hidden flex items-center gap-2 mr-1">
           <img
-            src="/images/logo_simbolo_horizontal.png"
+            src="../logo_simbolo_horizontal.png"
             alt="Honra"
             className="h-6 w-auto object-contain"
             style={{ maxWidth: "90px" }}
