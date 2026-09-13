@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { BlockchainModule } from '../blockchain/blockchain.module';
-import { HealthController } from './health.controller';
+import { BlockchainModule } from '../blockchain/blockchain.module.js';
+import { HealthController } from './health.controller.js';
 
 @Module({
   imports: [BlockchainModule],

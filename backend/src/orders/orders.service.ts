@@ -1,12 +1,12 @@
 import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { SupabaseService } from '../supabase/supabase.service';
-import { ProductsService } from '../products/products.service';
-import { EscrowService } from '../escrow/escrow.service';
-import { OrderStateService, OrderStatus } from './order-state.service';
-import { CreateOrderDto } from './dto/create-order.dto';
-import { FundOrderDto } from './dto/fund-order.dto';
-import { ShipOrderDto } from './dto/ship-order.dto';
+import { SupabaseService } from '../supabase/supabase.service.js';
+import { ProductsService } from '../products/products.service.js';
+import { EscrowService } from '../escrow/escrow.service.js';
+import { OrderStateService, OrderStatus } from './order-state.service.js';
+import { CreateOrderDto } from './dto/create-order.dto.js';
+import { FundOrderDto } from './dto/fund-order.dto.js';
+import { ShipOrderDto } from './dto/ship-order.dto.js';
 
 @Injectable()
 export class OrdersService {

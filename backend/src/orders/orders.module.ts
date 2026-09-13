@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { ProductsModule } from '../products/products.module';
-import { EscrowModule } from '../escrow/escrow.module';
-import { TransactionsModule } from '../transactions/transactions.module';
-import { OrdersController } from './orders.controller';
-import { OrdersService } from './orders.service';
-import { OrderStateService } from './order-state.service';
+import { ProductsModule } from '../products/products.module.js';
+import { EscrowModule } from '../escrow/escrow.module.js';
+import { TransactionsModule } from '../transactions/transactions.module.js';
+import { OrdersController } from './orders.controller.js';
+import { OrdersService } from './orders.service.js';
+import { OrderStateService } from './order-state.service.js';
 
 @Module({
   imports: [ProductsModule, EscrowModule, TransactionsModule],

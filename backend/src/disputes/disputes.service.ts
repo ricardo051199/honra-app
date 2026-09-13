@@ -1,10 +1,10 @@
 import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
-import { SupabaseService } from '../supabase/supabase.service';
-import { OrdersService } from '../orders/orders.service';
-import { OrderStateService } from '../orders/order-state.service';
-import { EscrowService } from '../escrow/escrow.service';
-import { CreateDisputeDto } from './dto/create-dispute.dto';
-import { ResolveDisputeDto } from './dto/resolve-dispute.dto';
+import { SupabaseService } from '../supabase/supabase.service.js';
+import { OrdersService } from '../orders/orders.service.js';
+import { OrderStateService } from '../orders/order-state.service.js';
+import { EscrowService } from '../escrow/escrow.service.js';
+import { CreateDisputeDto } from './dto/create-dispute.dto.js';
+import { ResolveDisputeDto } from './dto/resolve-dispute.dto.js';
 
 @Injectable()
 export class DisputesService {

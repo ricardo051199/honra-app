@@ -1,13 +1,13 @@
 import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
-import { CurrentUser } from '../auth/decorators/current-user.decorator';
-import type { AuthTokenPayload } from '../auth/auth.service';
-import { OrdersService } from './orders.service';
-import { CreateOrderDto } from './dto/create-order.dto';
-import { FundOrderDto } from './dto/fund-order.dto';
-import { ShipOrderDto } from './dto/ship-order.dto';
-import { TransactionsService } from '../transactions/transactions.service';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard.js';
+import { CurrentUser } from '../auth/decorators/current-user.decorator.js';
+import type { AuthTokenPayload } from '../auth/auth.service.js';
+import { OrdersService } from './orders.service.js';
+import { CreateOrderDto } from './dto/create-order.dto.js';
+import { FundOrderDto } from './dto/fund-order.dto.js';
+import { ShipOrderDto } from './dto/ship-order.dto.js';
+import { TransactionsService } from '../transactions/transactions.service.js';
 
 @ApiTags('orders')
 @ApiBearerAuth()

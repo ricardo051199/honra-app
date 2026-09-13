@@ -1,9 +1,9 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { verifyMessage } from 'viem';
-import { SupabaseService } from '../supabase/supabase.service';
-import { NonceService } from './nonce.service';
-import { normalizeAddress } from '../common/utils/address.util';
+import { SupabaseService } from '../supabase/supabase.service.js';
+import { NonceService } from './nonce.service.js';
+import { normalizeAddress } from '../common/utils/address.util.js';
 
 export interface AuthTokenPayload {
   sub: string; // user id

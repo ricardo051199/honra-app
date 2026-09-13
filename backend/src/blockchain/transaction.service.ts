@@ -1,7 +1,7 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { PublicClient, TransactionReceipt } from 'viem';
-import { createHskPublicClient } from './public-client';
+import { createHskPublicClient } from './public-client.js';
 
 /**
  * Everything that touches the chain for READS and for confirming that a

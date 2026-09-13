@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { BlockchainTransactionService } from '../blockchain/transaction.service';
+import { BlockchainTransactionService } from '../blockchain/transaction.service.js';
 
 /**
  * Read-side helpers for the escrow contract that don't require the ABI

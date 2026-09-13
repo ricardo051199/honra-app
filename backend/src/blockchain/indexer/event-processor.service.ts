@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { Log } from 'viem';
-import { SupabaseService } from '../../supabase/supabase.service';
+import { SupabaseService } from '../../supabase/supabase.service.js';
 
 /**
  * Turns a raw log into: a row in `blockchain_events`, and (once matched

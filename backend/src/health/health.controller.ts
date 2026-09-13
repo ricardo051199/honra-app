@@ -1,8 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { ApiTags } from '@nestjs/swagger';
-import { SupabaseService } from '../supabase/supabase.service';
-import { BlockchainTransactionService } from '../blockchain/transaction.service';
+import { SupabaseService } from '../supabase/supabase.service.js';
+import { BlockchainTransactionService } from '../blockchain/transaction.service.js';
 
 @ApiTags('health')
 @Controller('health')

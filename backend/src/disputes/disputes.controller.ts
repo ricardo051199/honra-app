@@ -1,13 +1,13 @@
 import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
-import { RolesGuard } from '../auth/guards/roles.guard';
-import { Roles } from '../auth/decorators/roles.decorator';
-import { CurrentUser } from '../auth/decorators/current-user.decorator';
-import type { AuthTokenPayload } from '../auth/auth.service';
-import { DisputesService } from './disputes.service';
-import { CreateDisputeDto } from './dto/create-dispute.dto';
-import { ResolveDisputeDto } from './dto/resolve-dispute.dto';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard.js';
+import { RolesGuard } from '../auth/guards/roles.guard.js';
+import { Roles } from '../auth/decorators/roles.decorator.js';
+import { CurrentUser } from '../auth/decorators/current-user.decorator.js';
+import type { AuthTokenPayload } from '../auth/auth.service.js';
+import { DisputesService } from './disputes.service.js';
+import { CreateDisputeDto } from './dto/create-dispute.dto.js';
+import { ResolveDisputeDto } from './dto/resolve-dispute.dto.js';
 
 @ApiTags('disputes')
 @ApiBearerAuth()

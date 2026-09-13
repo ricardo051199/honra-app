@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { OrdersModule } from '../orders/orders.module';
-import { EscrowModule } from '../escrow/escrow.module';
-import { DisputesController } from './disputes.controller';
-import { DisputesService } from './disputes.service';
+import { OrdersModule } from '../orders/orders.module.js';
+import { EscrowModule } from '../escrow/escrow.module.js';
+import { DisputesController } from './disputes.controller.js';
+import { DisputesService } from './disputes.service.js';
 
 @Module({
   imports: [OrdersModule, EscrowModule],

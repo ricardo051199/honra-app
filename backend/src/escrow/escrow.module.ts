@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { BlockchainModule } from '../blockchain/blockchain.module';
-import { EscrowService } from './escrow.service';
+import { BlockchainModule } from '../blockchain/blockchain.module.js';
+import { EscrowService } from './escrow.service.js';
 
 @Module({
   imports: [BlockchainModule],

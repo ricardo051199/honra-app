@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { randomBytes } from 'crypto';
-import { normalizeAddress } from '../common/utils/address.util';
+import { normalizeAddress } from '../common/utils/address.util.js';
 
 interface NonceEntry {
   nonce: string;

@@ -1,8 +1,8 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { BlockchainTransactionService } from '../transaction.service';
-import { BlockCursorService } from './block-cursor.service';
-import { EventProcessorService } from './event-processor.service';
+import { BlockchainTransactionService } from '../transaction.service.js';
+import { BlockCursorService } from './block-cursor.service.js';
+import { EventProcessorService } from './event-processor.service.js';
 
 /**
  * Polls HSK Chain for new HonraEscrow logs and processes them, so the
