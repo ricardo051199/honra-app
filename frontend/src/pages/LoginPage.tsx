@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logoHorizontal from "@/imports/logo_simbolo_horizontal.png";
 
 interface LoginPageProps {
   onLogin: () => void;
@@ -54,7 +53,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <img
-            src={logoHorizontal}
+            src="../public/imagenes/logo_simbolo_horizontal.png"
             alt="Honra — Compra seguro, vende con palabra"
             className="h-12 w-auto object-contain"
             style={{ maxWidth: "200px" }}

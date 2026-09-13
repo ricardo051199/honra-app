@@ -1,7 +1,6 @@
 import React from "react";
 import WalletButton from "../ui/WalletButton";
 import type { NavPage } from "./Sidebar";
-import logoHorizontal from "@/imports/logo_simbolo_horizontal.png";
 
 interface HeaderProps {
   activePage: NavPage;
@@ -49,7 +48,7 @@ export default function Header({
       {showMenuButton && (
         <div className="md:hidden flex items-center gap-2 mr-1">
           <img
-            src={logoHorizontal}
+            src="../public/imagenes/logo_simbolo_horizontal.png"
             alt="Honra"
             className="h-6 w-auto object-contain"
             style={{ maxWidth: "90px" }}

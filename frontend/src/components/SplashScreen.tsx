@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logoHorizontal from "@/imports/logo_simbolo_horizontal.png";
 
 interface SplashScreenProps {
   onDone: () => void;
@@ -40,7 +39,7 @@ export default function SplashScreen({ onDone }: SplashScreenProps) {
         {/* Logo */}
         <div className="animate-honra-rise" style={{ animationDelay: "0.05s" }}>
           <img
-            src={logoHorizontal}
+            src="../public/imagenes/logo_simbolo_horizontal.png"
             alt="Honra"
             className="h-14 w-auto object-contain"
             style={{ maxWidth: "220px" }}
