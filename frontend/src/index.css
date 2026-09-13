@@ -58,6 +58,30 @@
   --header-height: 60px;
 }
 
+@keyframes honra-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes honra-fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes honra-dot-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.35; }
+  40%           { transform: translateY(-6px); opacity: 1; }
+}
+
+@keyframes honra-slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-honra-rise      { animation: honra-rise 0.55s cubic-bezier(0.22,1,0.36,1) both; }
+.animate-honra-fade-out  { animation: honra-fade-out 0.35s ease forwards; }
+.animate-honra-slide-up  { animation: honra-slide-up 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
 * {
   box-sizing: border-box;
 }

@@ -6,9 +6,13 @@ import MyOrdersPage from "./pages/MyOrdersPage";
 import SellerPage from "./pages/SellerPage";
 import DisputesPage from "./pages/DisputesPage";
 import ProfilePage from "./pages/ProfilePage";
+import LoginPage from "./pages/LoginPage";
 import PlaceholderPage from "./pages/PlaceholderPage";
+import SplashScreen from "./components/SplashScreen";
 import { ToastProvider } from "./components/ui/Toast";
 import { MOCK_WALLET } from "./mock/data";
+
+type AppState = "splash" | "login" | "app";
 
 function OrdersIcon() {
   return (
@@ -47,6 +51,7 @@ function ProfileIcon() {
 }
 
 export default function App() {
+  const [appState, setAppState] = useState<AppState>("splash");
   const [activePage, setActivePage] = useState<NavPage>("marketplace");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [walletConnected, setWalletConnected] = useState(MOCK_WALLET.connected);
@@ -78,6 +83,22 @@ export default function App() {
     setActivePage(page);
     setMobileMenuOpen(false);
   };
+
+  if (appState === "splash") {
+    return (
+      <ToastProvider>
+        <SplashScreen onDone={() => setAppState("login")} />
+      </ToastProvider>
+    );
+  }
+
+  if (appState === "login") {
+    return (
+      <ToastProvider>
+        <LoginPage onLogin={() => setAppState("app")} />
+      </ToastProvider>
+    );
+  }
 
   return (
     <ToastProvider>

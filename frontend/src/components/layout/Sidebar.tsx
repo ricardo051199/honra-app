@@ -1,4 +1,5 @@
 import React from "react";
+import logoHorizontal from "@/imports/logo_simbolo_horizontal.png";
 
 export type NavPage = "marketplace" | "orders" | "seller" | "disputes" | "profile";
 
@@ -77,14 +78,14 @@ export default function Sidebar({ activePage, onNavigate, compact = false }: Sid
       <div className={`flex items-center h-[var(--header-height)] border-b border-[var(--border)] shrink-0 ${compact ? "justify-center px-2" : "px-4"}`}>
         {compact ? (
           <img
-            src="../logo_simbolo_horizontal.png"
+            src={logoHorizontal}
             alt="Honra"
             className="h-7 w-7 object-cover object-left"
             style={{ maxWidth: "28px" }}
           />
         ) : (
           <img
-            src="../logo_simbolo_horizontal.png"
+            src={logoHorizontal}
             alt="Honra — Compra seguro, vende con palabra"
             className="h-8 w-auto object-contain object-left"
             style={{ maxWidth: "140px" }}
